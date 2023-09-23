@@ -35,7 +35,7 @@ const Product = ({ product }) => {
           </div>
           {/* buttons */}
           <div
-            className="absolute top-6 -right-0 gruop-hover:right-5
+            className="absolute top-6 -right-0 group-hover:right-5
             p-2 flex flex-col items-center justify-center gap-y-2
             opacity-0 group-hover:opacity-100 transition-all duration-300"
           >
@@ -59,7 +59,7 @@ const Product = ({ product }) => {
         </div>
       </div>
       {/* category & title & price */}
-      <div className="text-s capitalize text=gray-500 mb-1">
+      <div className="text-s capitalize font-light text-gray-440 mb-1">
         <div>{category}</div>
         <Link to={`/product/${id}`}>
           {/* in order to create a link to title create a route dynamicaly */}

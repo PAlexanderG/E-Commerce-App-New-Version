@@ -13,6 +13,7 @@ import { CartContext } from "../contexts/CartContext";
 
 const Sidebar = () => {
   const { isOpen, handleClose } = useContext(SidebarContext);
+  const { cart } = useContext(CartContext);
 
   return (
     <div
@@ -34,6 +35,13 @@ const Sidebar = () => {
         >
           <IoMdArrowForward className="text-2xl" />
         </div>
+      </div>
+      <div>
+        {cart.map((item) => {
+          // in order to pass tthe CartItem errase the text title
+          // and replaced it with the alias.. Any 
+          return <CartItem item={item} key={item.id} />;
+        })}
       </div>
     </div>
   );
