@@ -13,7 +13,8 @@ import { CartContext } from "../contexts/CartContext";
 
 const Sidebar = () => {
   const { isOpen, handleClose } = useContext(SidebarContext);
-  const { cart } = useContext(CartContext);
+  // add clearCart
+  const { cart, clearCart, total } = useContext(CartContext);
 
   return (
     <div
@@ -36,12 +37,41 @@ const Sidebar = () => {
           <IoMdArrowForward className="text-2xl" />
         </div>
       </div>
-      <div>
+      {/* use bg-purple-200 to check the space you have to work in CSS */}
+      <div
+        className="flex flex-col gap-y-2 h-[520px]
+      lg:h-[640px] overflow-y-auto overflow-x-hidden border-b"
+      >
         {cart.map((item) => {
           // in order to pass tthe CartItem errase the text title
-          // and replaced it with the alias.. Any 
+          // and replaced it with the alias.. Any
           return <CartItem item={item} key={item.id} />;
         })}
+      </div>
+      <div
+        className="flex flex-col gap-y-3 py-4
+      mt-4"
+      >
+        <div
+          className="flex w-full
+        justify-between items-center"
+        >
+          {/* total */}
+          {/* to convert to 2 decimals use: a fuction 
+          {parseFloat(total).toFixed(2)}*/}
+          <div className="uppercase font-semibold">
+            <span className="mr-2">Total:</span>$ {parseFloat(total).toFixed(2)}
+          </div>
+          {/* clear cart icon & add onClick property*/}
+          <div
+            onClick={clearCart}
+            className="cursor-pointer py-4 bg-red-500
+          text-white w-12 h-12 flex justify-center
+          items-center text-xl"
+          >
+            <FiTrash2 />
+          </div>
+        </div>
       </div>
     </div>
   );

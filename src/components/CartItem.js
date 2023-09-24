@@ -8,7 +8,8 @@ import { CartContext } from "../contexts/CartContext";
 
 // passing item using parameters to title: { item }) & {item.title}
 const CartItem = ({ item }) => {
-  const { removeFromCart } = useContext(CartContext);
+  const { removeFromCart, increaseAmount, decreaseAmount } =
+    useContext(CartContext);
   // destructure item
   const { id, title, image, price, amount } = item;
   return (
@@ -56,10 +57,11 @@ const CartItem = ({ item }) => {
             items-center h-full border
             text-primary font-medium"
             >
-              {/* minus icon */}
+              {/* minus icon  & create a click button to pass it*/}
               <div
+                onClick={() => decreaseAmount(id)}
                 className="flex-1 flex
-              justify-center items-center cursor-pointer"
+              justify-center items-center cursor-pointer h-full"
               >
                 <IoMdRemove />
               </div>
@@ -73,6 +75,7 @@ const CartItem = ({ item }) => {
               </div>
               {/* plus icon */}
               <div
+                onClick={() => increaseAmount(id)}
                 className="flex-1 h-full flex
               justify-center items-center cursor-pointer"
               >
