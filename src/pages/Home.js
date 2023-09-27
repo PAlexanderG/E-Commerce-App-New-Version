@@ -3,6 +3,8 @@ import { useContext } from "react";
 import { ProductContext } from "../contexts/ProductContext";
 // import components
 import Product from "../components/Product";
+// import hero
+import Hero from "../components/Hero";
 
 const Home = () => {
   // get products from product context
@@ -22,7 +24,9 @@ const Home = () => {
   // map the product using key property
   // add CSS in line for margin, border, padding, etc, using className
   return (
+  
     <div>
+      <Hero />
       <section className="py-16">
         <div className="container mx-auto">
           <div

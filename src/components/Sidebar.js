@@ -43,7 +43,7 @@ const Sidebar = () => {
       lg:h-[640px] overflow-y-auto overflow-x-hidden border-b"
       >
         {cart.map((item) => {
-          // in order to pass tthe CartItem errase the text title
+          // in order to pass the CartItem errase the plain text title
           // and replaced it with the alias.. Any
           return <CartItem item={item} key={item.id} />;
         })}
@@ -72,6 +72,20 @@ const Sidebar = () => {
             <FiTrash2 />
           </div>
         </div>
+        <Link
+          to={"/"}
+          className=" bg-gray-200 flex p-4 justify-center
+        items-center text-primary w-full font-medium"
+        >
+          View cart
+        </Link>
+        <Link
+          to={"/"}
+          className="bg-primary flex p-4 justify-center
+        items-center text-white w-full font-medium"
+        >
+          Checkout
+        </Link>
       </div>
     </div>
   );
