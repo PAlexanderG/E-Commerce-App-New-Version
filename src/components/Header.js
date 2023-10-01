@@ -9,6 +9,7 @@ import { BsBag } from "react-icons/bs";
 import { Link } from "react-router-dom";
 // import logo
 import Logo from "../img/logo.svg";
+// import Login from "../components/Login";
 
 const Header = () => {
   // header state
@@ -24,9 +25,11 @@ const Header = () => {
     });
   });
   return (
-    // chance colors....
-    <header className={`${isActive ? "bg-white py-4 shadow-md" : "bg-none py-6"}
-    fixed w-full z-10 transition-all`}>
+    // change colors....
+    <header
+      className={`${isActive ? "bg-white py-4 shadow-md" : "bg-none py-6"}
+    fixed w-full z-10 transition-all`}
+    >
       <div
         className="container mx-auto flex items-center
       justify-between h-full"
@@ -37,6 +40,10 @@ const Header = () => {
             <img className="w-[40px]" src={Logo} alt="" />
           </div>
         </Link>
+        {/* Login */}
+        {/* <Link to={"auth/login"}>
+          <div>{Login}</div>
+        </Link> */}
         {/* cart */}
         <div
           onClick={() => setIsOpen(!isOpen)}
