@@ -7,7 +7,23 @@
 
 # Fake Store API E-commerce Application
 
-## FakeStoreApi is a fake Store API that you can be used with any type of shopping project that needs products, carts, and users in JSON format. However, you do not need any serve-side code to run the application, so it is easy to use via end the points you get in the Docs of the main page.
+## FakeStoreApi is a fake Store API that you can be used with any type of shopping project that needs products, carts, and users in JSON format. However, you do not need any serve-side code to run the application, so it is easy to use via end the points you get in the Docs of the main page. Creating a fully-functional front-end application from scratch or use this starter for front-end.Links to an external site.
+
+## E-Commerce App Requirements Tier 1: MVP (Minimum Viable Product)
+
+# AS A USER (NOT LOGGED IN), I SHOULD BE ABLE TO:
+
+# Access the website via the internet so I can browse and purchase products. (Deployed on a front end host)
+
+# View all available products.
+
+# View the details for an individual product, including product descriptions, photos, price, etc.
+
+# Sort products by certain characteristics (name, price, etc.).
+
+# Filter products by certain characteristics (category, type, maximum/minimum price, etc.).
+
+# Enjoy an aesthetically pleasing website with intuitive and easy to use UI/UX
 
 ## Tech Stack
 
@@ -19,11 +35,11 @@
 
 # Bootstrap & React Bootstrap: For responsive styling & layout
 
-# TailwindCSS: for CSS inline layout
+# TailwindCSS: For CSS inline layout
 
 ## Challenges
 
-# ....
+# Authentication Endpoint Path: There is an additional field provided by the API, isAuthor, which is only valid for posts made by the user represented by the authentication token. I had to make sure to use the data that they have registered by id for posts based on whether or not the current user is the author. Then, I had to use the users' passwords and username data they have available in the Fake Store API to authenticate them.
 
 ## Installation:
 
@@ -35,7 +51,9 @@
 
 ## Credits
 
-# .....
+# Fake Store API: https://fakestoreapi.com/
+
+# YouTube Tutorial Video: https://www.youtube.com/watch?v=lGnuiAZCjuM&t=6729s
 
 ## Lincence
 
