@@ -21,15 +21,14 @@ const Hero = () => {
             className="font-semibold flex items-center
           uppercase"
           >
-            <div className="w-10 h-[2px] bg-red-500 mr-3">
-              </div>New Trend
+            <div className="w-20 h-[2px] bg-red-500 mr-3"></div>
           </div>
           {/* title */}
           <h1
             className="text-[70px] leading-[1.1] font-light
           mb-4"
           >
-            AUTUMN SALE STYLISH <br />
+            AUTUMNAL EQUINOX <br />
             <span className="font-semibold">Your Online Store</span>
           </h1>
           <Link
@@ -37,14 +36,11 @@ const Hero = () => {
             className="self-start uppercase font-semibold
           border-b-2 border-primary"
           >
-            Discover More!
+            More Details!
           </Link>
         </div>
         {/* image */}
         {/* use "hidden lg:block to hidde the image for smaller devices size" */}
-        <div className="hidden lg:block">
-          <img src={WomanImg} alt="" />
-        </div>
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ import { BsBag } from "react-icons/bs";
 import { Link } from "react-router-dom";
 // import logo
 import Logo from "../img/logo.svg";
-// import Login from "../components/Login";
+import Login from "./Login";
 
 const Header = () => {
   // header state
@@ -41,9 +41,9 @@ const Header = () => {
           </div>
         </Link>
         {/* Login */}
-        {/* <Link to={"auth/login"}>
+        <Link to={"/login"}>
           <div>{Login}</div>
-        </Link> */}
+        </Link>
         {/* cart */}
         <div
           onClick={() => setIsOpen(!isOpen)}

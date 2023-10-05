@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React from "react";
 // import react router Dom
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -8,9 +9,10 @@ import ProductDetails from "./pages/ProductDetails";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-// import Signin from "./components/Signin";
+import Login from "./components/Login";
 
 const App = () => {
+  const [token, setToken] = useState("");
   return (
     <div className="overflow-hidden">
       <Router>
@@ -18,17 +20,17 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product/:id" element={<ProductDetails />} />
-          {/* <Route
-            path="auth/login"
+          <Route
+            path="/login"
             element={
               <Login
                 token={token}
                 setToken={setToken}
-                username={username}
-                setUsername={setUsername}
+                // username={username}
+                // setUsername={setUsername}
               />
             }
-          /> */}
+          />
         </Routes>
         <Sidebar />
         <Footer />
