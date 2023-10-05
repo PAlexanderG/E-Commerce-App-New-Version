@@ -1,5 +1,3 @@
-![Screen Shot 2023-10-02 at 9 51 13 AM](https://github.com/PAlexanderG/E-Commerce-App-New-Version/assets/127268600/1fbf03af-6bb2-447b-94f7-85c73f9097e2)
-
 ![Screen Shot 2023-10-02 at 9 51 53 AM](https://github.com/PAlexanderG/E-Commerce-App-New-Version/assets/127268600/6513003d-56f4-409b-be16-f5a5ce6791f8)
 
 ![Screen Shot 2023-10-02 at 9 52 05 AM](https://github.com/PAlexanderG/E-Commerce-App-New-Version/assets/127268600/2362e60b-cee4-4833-b9a6-58ad75753e66)
