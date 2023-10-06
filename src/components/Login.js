@@ -53,13 +53,23 @@ export default function Login({ token, setToken }) {
   }
   return (
     <>
-      <h2 className="text-medium font-bold">Log In</h2>
+      <h2
+        className="text-medium font-medium flex flex-col gap-y-2
+      overflow-y-auto border-b"
+      >
+        Log-in
+      </h2>
       {error && <p>{error}</p>}
-      <form className="flex flex-col gap-y-2 h-[100px]
-      overflow-y-auto border-b" onSubmit={handleSubmit}>
+      <form
+        className="
+      border-b"
+        onSubmit={handleSubmit}
+      >
         <label>
           Username:{""}
           <input
+            className="flex
+          justify-center items-center"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
@@ -67,12 +77,19 @@ export default function Login({ token, setToken }) {
         <label>
           Password:{""}
           <input
+            className="flex
+          justify-center items-center"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
-        <button>Submit</button>
+        <button
+          className="cursor-pointer bg-gray-200 flex justify-center
+        items-center text-primary text-center w-full font-medium"
+        >
+          Submit
+        </button>
       </form>
     </>
   );
