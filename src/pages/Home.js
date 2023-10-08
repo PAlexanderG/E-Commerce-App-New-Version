@@ -73,8 +73,11 @@ const Home = () => {
               })}
           </div>
         </div>
-        <button className="bg-primary flex p-4 justify-center
-        items-center text-white w-full font-medium" onClick={handleClick}>
+        <button
+          className="m-2 bg-black flex p-4 justify-center
+          items-center text-white w-full font-medium"
+          onClick={handleClick}
+        >
           ELECTRONICS
         </button>
         <Login />

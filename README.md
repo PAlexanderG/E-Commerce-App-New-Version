@@ -1,9 +1,10 @@
+![Alt text](<Screen Shot 2023-10-06 at 9.03.36 PM.png>)
+
 ![Screen Shot 2023-10-02 at 9 52 05 AM](https://github.com/PAlexanderG/E-Commerce-App-New-Version/assets/127268600/2362e60b-cee4-4833-b9a6-58ad75753e66)
 
 ![Screen Shot 2023-10-02 at 9 51 34 AM](https://github.com/PAlexanderG/E-Commerce-App-New-Version/assets/127268600/d333860b-4378-42cb-aa31-caf857839979)
 
 # ecommerce-shop-starter# E-Commerce-App-New-Version![Uploading Screen Shot 2023-10-02 at 9.51.34 AM.png…]()
-
 
 # Fake Store API E-commerce Application
 

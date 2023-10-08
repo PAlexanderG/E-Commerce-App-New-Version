@@ -53,44 +53,37 @@ export default function Login({ token, setToken }) {
   }
   return (
     <>
-      <h2
-        className="text-medium font-medium flex flex-col gap-y-2
-      overflow-y-auto border-b"
-      >
-        Log-in
-      </h2>
-      {error && <p>{error}</p>}
-      <form
-        className="
-      border-b"
-        onSubmit={handleSubmit}
-      >
-        <label>
-          Username:{""}
-          <input
-            className="flex
+      <h2 className="m-2">Login:</h2>
+      <section className="m-2">
+        {error && <p>{error}</p>}
+        <form onSubmit={handleSubmit}>
+          <label>
+            Username:{""}
+            <input
+              className="flex
           justify-center items-center"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-        </label>
-        <label>
-          Password:{""}
-          <input
-            className="flex
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </label>
+          <label>
+            Password:{""}
+            <input
+              className="flex
           justify-center items-center"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </label>
-        <button
-          className="cursor-pointer bg-gray-200 flex justify-center
-        items-center text-primary text-center w-full font-medium"
-        >
-          Submit
-        </button>
-      </form>
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </label>
+          <button
+            className="bg-gray-300 flex p-4 justify-center
+          items-center text-primary w-full font-medium"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
     </>
   );
 }
